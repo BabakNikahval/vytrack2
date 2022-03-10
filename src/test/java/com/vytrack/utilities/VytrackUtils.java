@@ -65,4 +65,8 @@ public class VytrackUtils {
             e.printStackTrace();
         }
     }
+
+    public static void navigate(String tab,String module){
+
+    }
 }
