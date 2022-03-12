@@ -8,8 +8,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public abstract class TestBase {
-    VytrackLoginPage loginPage;
-    DashboardPage dashboardPage;
+   protected VytrackLoginPage loginPage;
+    protected DashboardPage dashboardPage;
     @BeforeMethod
     public void setUp() {
        // Driver.getDriver().get(ConfigurationReader.getProperty("env1"));
