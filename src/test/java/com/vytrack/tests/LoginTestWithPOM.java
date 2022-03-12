@@ -2,6 +2,7 @@ package com.vytrack.tests;
 
 import com.vytrack.pages.DashboardPage;
 import com.vytrack.pages.VytrackLoginPage;
+import com.vytrack.tests.base.TestBase;
 import com.vytrack.utilities.BrowserUtils;
 import com.vytrack.utilities.ConfigurationReader;
 import com.vytrack.utilities.Driver;
@@ -9,11 +10,13 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
-public class LoginTestWithPOM {
+public class LoginTestWithPOM extends TestBase {
+
+
 
     @Test
     public void login_test(){
-        VytrackLoginPage loginPage=new VytrackLoginPage();
+
         //goto login page
         loginPage.gotoLoginPage();
         //enter username
@@ -28,12 +31,21 @@ public class LoginTestWithPOM {
         BrowserUtils.sleep(2);
         loginPage.loginButton.click();
         DashboardPage dashboardPage=new DashboardPage();
-
+       //verify page header
         Boolean isDisplayedPageHeader=dashboardPage.pageHeader.isDisplayed();
         Assert.assertTrue(isDisplayedPageHeader);
 
 
 
+    }
+
+    @Test
+    public void login_test_with_method(){
+        //go to login page
+
+        //login
+
+        //verify page header
     }
 
 
