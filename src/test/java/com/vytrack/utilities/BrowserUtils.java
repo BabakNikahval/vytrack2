@@ -59,4 +59,23 @@ public class BrowserUtils {
     public static void verifyTitle(String expectedTitle){
         Assert.assertEquals(Driver.getDriver().getTitle(), expectedTitle);
     }
+
+    //Create hover(WebElement element) method
+
+
+
+    //Create scrollToElement(WebElement element) method
+
+
+
+    //Create waituntilTitleDisplay(String title) method
+
+
+    //Create waituntilInvisibilityOfElement(WebElement element,int timeout) method
+
+
+    //Create doubleClick(WebElement element) method
+
+
+
 }
